@@ -1,0 +1,79 @@
+body { 
+    font-family: 'Pacifico', cursive; /* Используем шрифт Pacifico */ 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f9a4cf; /* Белый фон */ 
+} 
+.container { 
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: rgba(255, 192, 203, 0.8); /* Розовый цвет с прозрачностью */ 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    position: relative; /* Добавляем позиционирование для дочерних элементов */ 
+} 
+h1, p { 
+    text-align: center; 
+} 
+.invitation { 
+    margin-top: 20px; 
+    text-align: center; 
+} 
+.invitation img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+} 
+.love-button { 
+    background-color: #ff69b4; /* Розовый цвет кнопки */ 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+} 
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.love-button:hover { 
+    background-color: #ff1493; /* Более темный оттенок розового при наведении */ 
+    font-size: 20px;
+    transition: 0.3s ease;
+} 
+.heart, .yes { 
+    position: absolute; 
+    animation: fly 3s ease-out; 
+} 
+@keyframes fly { 
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 1; } 
+    100% { transform: translate(-500px, -500px) rotate(1080deg); opacity: 0; } 
+}
+
+.dilnaz {
+    display: flex;
+    justify-content: space-around; /* Centers and distributes space between images */
+}
+
+.dilnaz img {
+    width: 200px; /* Set width of each image */
+    height: 200px; /* Set height of each image */
+    animation: rotateFunny 3s infinite; /* Apply animation */
+    transform-origin: center center; /* Rotate around the center */
+}
+
+@keyframes rotateFunny {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
